@@ -1,7 +1,6 @@
 package com.ptteng;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
+
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -9,14 +8,18 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 public class Controller {
-    @Autowired
-    ServiceClient serviceClient;
-
-    @RequestMapping("/feign-consumer")
-    public String helloConsumer(){
-        String returnMessage = serviceClient.getHelloService1();
-        System.out.println(returnMessage);
-        return returnMessage;
-    }
+//    @FeignClient("eureka-feign-client")
+//    interface helloservice extends ServiceClient{};
+//    @Autowired
+//    ServiceClient serviceClient;
+//    @Autowired
+//    private HelloServiceClient helloServiceClient;
+//
+//    @RequestMapping("/feign-consumer")
+//    public Car helloConsumer(){
+//        Car returnMessage = helloservice.getHelloService1();
+//        System.out.println(returnMessage);
+//        return returnMessage;
+//    }
 
 }
