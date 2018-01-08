@@ -1,6 +1,6 @@
 package com.ptteng;
 
-import org.springframework.cloud.netflix.feign.FeignClient;
+
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
@@ -8,13 +8,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
  */
 
 
-
-public interface ServiceClient {
+public interface mindddd {
 
     //@RequestMapping("/callToXiaoAI")
    // String getHelloService1();
 
-    @RequestMapping("/callToXiaoAI")
+    @RequestMapping("/mind")
     Car getHelloService1();
 
 }

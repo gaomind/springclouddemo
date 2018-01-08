@@ -15,18 +15,18 @@ import org.springframework.web.bind.annotation.RestController;
 public class SpringbootApplication {
 
 
-	@FeignClient("hello-service1")
-	interface  HelloServiceClient extends ServiceClient{
+	@FeignClient("mind")
+	interface HelloMindddd extends mindddd {
 	}
 
 	@RestController
 	public class Controller {
 		//    @FeignClient("eureka-feign-client")
-//    interface helloservice extends ServiceClient{};
+//    interface helloservice extends mindddd{};
 //    @Autowired
-//    ServiceClient serviceClient;
+//    mindddd serviceClient;
 		@Autowired
-		private HelloServiceClient helloServiceClient;
+		private HelloMindddd helloServiceClient;
 
 		@RequestMapping("/test")
 		public Car helloConsumer() {

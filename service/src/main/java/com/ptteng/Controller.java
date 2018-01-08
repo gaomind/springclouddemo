@@ -1,15 +1,13 @@
 package com.ptteng;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
  * Created by ${MIND-ZR} on 2018/1/5.
  */
 @RestController
-public class Controller  implements ServiceClient{
+public class Controller  implements mindddd {
 
     @Value("${spring.application.name}")
     private String serverName;
